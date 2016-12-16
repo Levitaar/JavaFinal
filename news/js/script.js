@@ -41,8 +41,8 @@ $.ajax({
       
     } else {
       var target = $('*[data-word="' + words[i] + '"]');
-      $("body").append("<p data-word='" + words[i] + "' data-fontsize='20' style='font-size:30px; background-color: blue ; margin:5px ; display: inline-block; transform: rotate(90deg) ;'>" + words[i] + "</p>");
-      
+      var rando = Math.floor(Math.random() * 180) + 1;
+      $("body").append("<p data-word='" + words[i] + "' data-fontsize='20' style='font-size:30px; background-color: blue ; margin:5px ; display: inline-block; transform: rotate(" + rando + "deg) ;'>" + words[i] + "</p>");
     }
 }
   
